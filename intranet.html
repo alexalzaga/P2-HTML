@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es"> 
+<head>
+	<title>amadeus - Intranet</title>
+	<style type="text/css">
+		body {
+		  background-color: lightgray;
+		  font-family: Verdana;
+		   max-width: 100%;
+    	  overflow-x: hidden;
+
+		}
+
+		nav {
+			text-align: center;
+			background-color: lightblue;
+			padding: 2%;
+		}
+
+		h1 {
+		  	text-align: center;
+		  	font-size: 100%
+		}
+
+		small {
+			font-size: 70%;
+			color: red
+		}
+
+	</style>
+</head>
+<body>
+	<section style="background-color: white;width: 120%;margin: -10px -5px 0px -10px">
+		<a href="index.html">
+			<img src="https://seekvectorlogo.com/wp-content/uploads/2018/10/amadeus-vector-logo.png" width="10%" height="10%" style="margin-left: 10px">
+		</a>
+	</section>
+	<nav>
+		<a href="intranet.html"; style="margin-right: 20%">Intranet</a>         
+	  	<a href="quienesSomos.html">Quienes Somos</a>    
+	  	<a href="shareChart.html"; style="margin-left: 20%">Grafico de Acciones</a>
+	</nav>
+	<br><br>
+	<div>
+		<form action="/signup" method="post" id="signup" style="margin:0% 32.5%;width:20%;border: 1px solid black; padding: 5%;background-color: white">
+			<h1>Inicio de sesion</h1>
+			<br>
+			<div>
+				<label for="user">Usuario:</label>
+				<input type="text" id="user" name="user" style="float: right">
+				<small></small>
+			</div>
+			<br><br>
+			<div>
+				<label for="password">Contraseña:</label>
+				<input type="text" id="password" name="password" style="float: right">
+				<small></small>
+			</div>
+			<br><br>
+			<div>
+				<label for="tidentification">Identificador:</label>
+				<select name="select" style="float: right">
+					<option value="value1">Empleado</option>
+					<option value="value2" selected="">Director</option>
+				</select>
+			</div>
+			<br><br>
+			<button type="submit" id style="margin: 0% 40%">Submit</button>
+		</form>
+	</div>
+	<script src="app.js"></script>
+</body>
+</html>
+
+
